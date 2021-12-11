@@ -1,0 +1,78 @@
+/* This is to format the page */
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'menu main main'
+  'menu main main'
+  'footer footer footer';
+  grid-gap: 5px;
+
+}
+
+/* This section is for general styling */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* everything below this is required to format the menu */
+span.left {
+  margin: auto;
+  position: relative;
+  float: left;
+}
+
+div.nav {
+  height: 100%;
+  width: 0;
+  margin: auto auto auto 3px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+a.closebtn {
+  position: absolute;
+  top: 0;
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-size: 36px;
+  z-index: 1;
+}
+
+a.link {
+  padding: 8px 8px 8px 35px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.link:hover, .closebtn:hover {
+  color: white;
+}
