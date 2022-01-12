@@ -1,79 +1,78 @@
 /* This is to format the page */
 .header {
-  grid-area: header;
+	grid-area: header;
 }
 
 .menu {
-  grid-area: menu;
+	grid-area: menu;
 }
 
 .main {
-  grid-area: main;
+	grid-area: main;
 }
 
 .footer {
-  grid-area: footer;
+	grid-area: footer;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-areas:
-  'header header header'
-  'menu main main'
-  'menu main main'
-  'footer footer footer';
-  grid-gap: 5px;
-
+	display: grid;
+	grid-template-areas:
+	'header header header header'
+	'menu main main main'
+	'menu main main main'
+	'footer footer footer footer';
+	grid-gap: 5px;
 }
 
 /* This section is for general styling */
 body {
-  font-family: "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 }
 
 /* everything below this is required to format the menu */
 span.left {
-  margin: auto;
-  position: relative;
-  float: left;
-  color: #00aefd;
+	margin: auto;
+	position: sticky;
+	float: left;
+	color: #00aefd;
 }
 
 div.nav {
-  height: 100%;
-  width: 0;
-  margin: auto auto auto 3px;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0px;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+	height: 100%;
+	width: 0;
+	margin: auto auto auto 5px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0px;
+	background-color: #272838;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
 }
 
 a.closebtn {
-  position: absolute;
-  top: 0;
-  padding: 8px 8px 8px 0px;
-  text-decoration: none;
-  color: #00aefd;
-  display: block;
-  transition: 0.3s;
-  font-size: 36px;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	padding: 8px 8px 8px 0px;
+	text-decoration: none;
+	color: #00aefd;
+	display: block;
+	transition: 0.3s;
+	font-size: 36px;
+	z-index: 1;
 }
 
 a.link {
-  padding: 8px 8px 8px 35px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #00aefd;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 35px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #00aefd;
+	display: block;
+	transition: 0.3s;
 }
 
 .link:hover, .closebtn:hover {
-  color: white;
+	color: f7f0f0;
 }
